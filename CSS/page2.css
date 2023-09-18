@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:wght@400;700&display=swap');
+
+:root {
+  --color: #333;
+}
+
+body {
+  font-family: 'Red Hat Text', sans-serif;
+  margin: 0; /* Add this to remove default body margin */
+  padding: 0; /* Add this to remove default body padding */
+  overflow-x: hidden; /* Add this to hide horizontal scrollbar */
+}
+html
+{
+  scroll-behavior: smooth;
+}
+.container {
+  text-align: center;
+  color: var(--color);
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Nunito Sans';
+  justify-content: center;
+  background-image:url(https://assets.website-files.com/634681057b887c6f4830fae2/6367dd5c321d97b1c041ba1d_6259f612ca16b7e172987cee_Future-of-Software-Eng.png);
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+h1 {
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+p {
+  max-width: 52ch;
+  line-height: 1.5;
+  padding: 1em;
+}
+
+a {
+  display: inline-block;
+  padding: 1em 3.5em;
+  background-color: var(--color);
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 0.3em;
+  font-weight: 700;
+  letter-spacing: .5px;
+  font-size: .875rem;
+}
+
+.other {
+  width: 100%;
+  min-height: 60vh;
+  background-color: var(--color);
+}
+
+.second {
+  background-image: url(https://user-images.githubusercontent.com/66934377/223913733-deb1d974-787d-43c4-b60d-eff538aa161e.gif);
+  background-attachment: fixed;
+  height: 1200px;
+}
+
+h3 {
+  font-weight: 700;
+  font-size: 1.6rem;
+  margin-top: 1em;
+}
+
+.card > a {
+  margin-bottom: 2em;
+}
+
+.item {
+  display: flex;
+  max-width: 320px;
+  background-color: white;;
+  flex-direction: column;
+  align-items: center;
+  border-radius: .5em;
+  -webkit-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  -moz-box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+  box-shadow: 0px 29px 38px -15px rgba(0,0,0,0.43);
+}
+
+.img {
+  width: 90%;
+  height: 200px;
+  background-size: cover;
+  background-position: center;
+  margin-top: 20px;
+  border-radius: .3em;;
+}
+
+.img-first {
+  background-image: url("../Img/face1.png");
+}
+
+.img-second {
+  background-image: url(https://img.freepik.com/premium-vector/business-people-working-together-team-flat-illustration_179970-3946.jpg);
+}
+
+.img-third {
+  background-image: url(https://media.istockphoto.com/id/1023081566/vector/vector-illustration-concept-of-testimonial-social-media-networking-business-communication.jpg?s=612x612&w=0&k=20&c=PvSOtIs7xqQw1Z5_CAsEnnoXwJPf8J4KucPOp91x5-E=);
+}
+
+.second {
+  flex-direction: row;
+  gap: 1.6em;
+}
+
+
+.description-container {
+  display: flex;
+  /*white-space: nowrap;*/
+  margin-top: 30px;
+}
+
+.left-description {
+  text-align: left;
+  display: inline-block;
+  flex-basis: 50%;
+}
+
+.right-description {
+  text-align: right;
+  flex-basis: 50%;
+}
+
+/* ... other styles ... */
+
+.description-list {
+  list-style-type: none; /* Remove the default bullet point */
+  margin: 0; /* Remove any default margin */
+  padding-left: 0; /* Remove any default padding */
+}
+
+.description-list li {
+  margin-top: 20px; /* Adjust the margin as needed */
+  position: relative;
+}
+
+.description-list li::before {
+  content: ""; /* Remove the custom bullet point */
+}
