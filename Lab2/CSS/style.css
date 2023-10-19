@@ -1,0 +1,70 @@
+.container {
+    margin: 0 auto;
+    max-width: 960px;
+  }
+
+.sr-only{
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+body
+{
+    background-color:#F0F0F0;
+}
+h1 {
+    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+    font-size: 30px;
+}
+h2
+{
+    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+}
+h3
+{
+    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+}
+.content {
+    max-width: 750px; /* Adjust this value as needed */
+}
+.metadata {
+    position: absolute;
+    left: 900px;
+    top: 200px;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+.caption {
+    margin-top: 10px; /* Add some space between the image and the caption */
+    max-width: 309px;
+}
+.metadata1 {
+    position: absolute;
+    left: 900px;
+    top: 680px;
+    margin-left: 20px; /* Adjust spacing as needed */
+
+}
+.metadata2 {
+    position: absolute;
+    left: 900px;
+    top: 2100px;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+.metadata3 {
+    position: absolute;
+    left: 900px;
+    top: 2750px;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
+.metadata4 {
+    position: absolute;
+    left: 900px;
+    top: 3820px;
+    margin-left: 20px; /* Adjust spacing as needed */
+}
