@@ -19,16 +19,16 @@ body
     background-color:#F0F0F0;
 }
 h1 {
-    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+    font-family: 'Playfair Display', serif;
     font-size: 30px;
 }
 h2
 {
-    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+    font-family: 'Playfair Display', serif;
 }
 h3
 {
-    font-family: 'Mooli', sans-serif; /* Use 'Mooli' as the font family */
+    font-family: 'Playfair Display', serif;
 }
 .content {
     max-width: 750px; /* Adjust this value as needed */
@@ -43,7 +43,9 @@ h3
     margin-top: 10px; /* Add some space between the image and the caption */
     max-width: 309px;
 }
+
 p
 {
+    font-family: 'Roboto', sans-serif;
     line-height: 1.6em;
 }
