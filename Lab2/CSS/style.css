@@ -43,28 +43,7 @@ h3
     margin-top: 10px; /* Add some space between the image and the caption */
     max-width: 309px;
 }
-.metadata1 {
-    position: absolute;
-    left: 900px;
-    top: 680px;
-    margin-left: 20px; /* Adjust spacing as needed */
-
-}
-.metadata2 {
-    position: absolute;
-    left: 900px;
-    top: 2100px;
-    margin-left: 20px; /* Adjust spacing as needed */
-}
-.metadata3 {
-    position: absolute;
-    left: 900px;
-    top: 2750px;
-    margin-left: 20px; /* Adjust spacing as needed */
-}
-.metadata4 {
-    position: absolute;
-    left: 900px;
-    top: 3820px;
-    margin-left: 20px; /* Adjust spacing as needed */
+p
+{
+    line-height: 1.6em;
 }
