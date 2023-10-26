@@ -31,12 +31,21 @@ body {
 }
 
 h1,
-h2,
 h3,
 h4{
   font-family: 'Cormorant Garamond', serif;
   font-weight: normal;
   padding: .2em 0;
+
+}
+
+h2
+{
+  font-family: 'Cormorant Garamond', serif;
+  font-weight: bold;
+  padding: .2em 0;
+
+  font-size: 25px;
 }
 
 p {
@@ -45,7 +54,7 @@ p {
 
 }
 
-h2 {font-size:1.25em;}
+
 
 header,
 nav,
@@ -54,7 +63,6 @@ aside,
 
 footer {
   padding: 1.5em;
-  border: 1px black solid;
 }
 
 header,
@@ -70,27 +78,32 @@ footer {
   width: 100vw;
   height: 100vh;
   grid-template-columns:
-   1fr       2fr       1fr;
+   1fr      1fr       1fr;
   grid-template-areas:
   "heady     heady     heady"
   "navvy     navvy     navvy"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
-  "aside1    mainy     aside2"
+    
+  "mainy    mainy     mainy"
+
+  "aside1    aside1     aside1"
+  
+  "aside2    aside2     aside2" 
+
   "footy     footy     footy";
 }
 
 header {grid-area: heady; background:#E6761E;}
 nav {grid-area: navvy; background:#E1CDA6;}
-main {grid-area: mainy; background: #1ECBE6; max-height: 100%;}
-#aside1 {grid-area: aside1; background: #9162C1;}
-#aside2 {grid-area: aside2; background: #40C566;}
+main {grid-area: mainy; background: #CBC3E3; max-height: 100%;}
+#aside1 {grid-area: aside1; background: #FFD580}
+#aside2 {grid-area: aside2; background: #83f28f;}
 footer {grid-area: footy; background: #8491D3;}
 
 nav ul {
 display: flex;
 flex-flow: row nowrap;
 justify-content: space-around;
+font-size: 20px;
 }
 
 nav ul li {
