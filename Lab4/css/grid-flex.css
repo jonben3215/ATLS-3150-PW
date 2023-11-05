@@ -33,7 +33,7 @@ body {
 h1,
 h3,
 h4{
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Merriweather', sans-serif;
   font-weight: normal;
   padding: .2em 0;
 
@@ -41,7 +41,7 @@ h4{
 
 h2
 {
-  font-family: 'Cormorant Garamond', serif;
+  font-family: 'Cormorant Garamond', sans-serif;
   font-weight: bold;
   padding: .2em 0;
 
@@ -51,7 +51,7 @@ h2
 p {
   margin: 1.8em 0;
   line-height: 1.8em;
-
+  font-family: 'Nosifer', serif;
 }
 
 
@@ -97,7 +97,7 @@ nav {grid-area: navvy; background:#E1CDA6;}
 main {grid-area: mainy; background: #CBC3E3; max-height: 100%;}
 #aside1 {grid-area: aside1; background: #FFD580}
 #aside2 {grid-area: aside2; background: #83f28f;}
-footer {grid-area: footy; background: #8491D3;}
+footer {grid-area: footy; background: #E6761E;}
 
 nav ul {
 display: flex;
