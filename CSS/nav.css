@@ -43,3 +43,11 @@
     margin-top: 50px;
   }
   
+  .skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-200%);
+  }

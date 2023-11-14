@@ -52,6 +52,14 @@ a {
   letter-spacing: .5px;
   font-size: .875rem;
 }
+.skip-link {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
 
 .other {
   width: 100%;

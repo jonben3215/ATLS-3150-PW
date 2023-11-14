@@ -20,6 +20,7 @@ header {
   margin: 0;
 }
 
+
 .section {
   text-align: center;
   position: absolute;
@@ -179,4 +180,12 @@ li::before {
 
 .fixed a:last-child {
   margin-right: 0;
+}
+.skip-link {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
 }
