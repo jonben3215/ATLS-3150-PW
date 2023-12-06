@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Nunito:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300&display=swap" rel="stylesheet');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-image: url('/img/parking.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Red Hat Display', sans-serif;
+  font-weight: bold;
+  overflow-x: hidden;
+  margin: 0;
+  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
+}
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+
+}
+.hidden-title {
+  display: none;
+}
+
+h2
+{
+    font-weight: bold;
+  padding: .2em 0;
+  text-align: center;
+}
+h3 {
+  font-weight: bold;
+  padding: .2em 0;
+  text-align: center;
+}
+.first-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.first-container h1 {
+  font-weight: bold;
+  padding: .2em 0;
+}
+
+.first-container p {
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  width: 50%;
+}
+
+.first-container img {
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  max-width: 100%;
+}
+
+ul {  
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-weight: bold;
+    
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    font-weight: bold;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 10px;
+    text-decoration: none;
+  }
+  
+.logo {
+    font-weight: bold;
+    text-decoration: none;
+}
+li.logo a
+{
+    color: green; /* Set the text color to green */
+}
+
+li a:hover:not(.active) {
+    background-color: gray;
+    border-radius: 100px;
+}
+
+li a.active {
+    color: white; /* Change the text color to ensure visibility */
+    background-color: green;
+    border-radius: 100px;
+}
+
+li.logo a:hover {
+    background-color: transparent !important;
+}
+
+.button {
+  border: none;;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+}
+
+.button1 
+{
+  background-color: #04AA6D;
+  position: relative;
+  left: 45%;
+  top: 500px;
+  border-radius:2em;
+  font-family: "ＭＳ Ｐゴシック", sans-serif;
+  font-weight: bold;
+
+} /* Green */
+@media only screen and (max-width: 780px) {
+  .button1 {
+      text-align: center; /* Center align the content */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+  }
+}
