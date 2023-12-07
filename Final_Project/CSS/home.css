@@ -36,7 +36,7 @@ body {
 }
 
 .skip-link:focus {
-  transform: translateY(0%);
+  transform: translateY(-100%);
 }
 
 .skip-link {
@@ -89,6 +89,8 @@ ul {
     padding: 0;
     overflow: hidden;
     font-weight: bold;
+    position: relative;
+    top: 5px;
     
   }
   
@@ -140,13 +142,13 @@ li.logo a:hover {
   color: white
 }
 
-.second-container h1 {
+.second-container h2 {
   position: relative;
   font-weight: bold;
   overflow: hidden;
   padding: .2em 0;
-  /*top: 80%;*/
-  left: 20%;
+  top: 10px;
+  left: 0;
 }
 
 .second-container p {
