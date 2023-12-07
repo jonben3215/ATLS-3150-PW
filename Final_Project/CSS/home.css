@@ -281,7 +281,7 @@ li.logo a:hover {
   margin: 1.8em 0;
   line-height: 1.8em;
   overflow: hidden;
-  top: 5px;
+  top: -10px;
   right: -5%;
 }
 .fourth-container p
@@ -376,13 +376,18 @@ li.logo a:hover {
 }
 
 /* Style for the dropdown button */
+
+.dropdown {
+  margin-top: 20px; /* Adjust this value to move the entire dropdown down */
+}
 .dropdown button {
   position: relative;
-  top: 30px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
   background-color: transparent;
   border: none;
   cursor: pointer;
   padding: 0;
+
 }
 
 /* Style for the dropdown content (hidden by default) */

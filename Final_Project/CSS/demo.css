@@ -8,17 +8,10 @@
   padding: 0;
   margin: 0;
 }
-
 body {
-  background-image: url('/img/parking.gif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
   font-family: 'Red Hat Display', sans-serif;
   font-weight: bold;
   overflow-x: hidden;
-  margin: 0;
-  min-height: 100vh; /* Ensure the body takes at least the full height of the viewport */
 }
 .sr-only {
   border: 0;
@@ -32,13 +25,30 @@ body {
   width: 1px;
 
 }
+
+.skip-link {
+  background: black;
+  color: #fff;
+  font-weight: 700;
+  padding: 4px;
+  position: absolute;
+  transform: translateY(-200%);
+}
+
+.skip-link:focus {
+  transform: translateY(-100%);
+}
+
+.skip-link {
+  /* Same as  before */
+  transition: transform 0.3s;
+}
 .hidden-title {
   display: none;
 }
-
 h2
 {
-    font-weight: bold;
+  font-weight: bold;
   padding: .2em 0;
   text-align: center;
 }
@@ -119,33 +129,285 @@ li.logo a:hover {
     background-color: transparent !important;
 }
 
-.button {
-  border: none;;
-  padding: 15px 32px;
+/* Start Second container */
+.second-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer;
+  background-color: black;
+  color: white
 }
 
-.button1 
-{
-  background-color: #04AA6D;
+.second-container h1 {
   position: relative;
-  left: 45%;
-  top: 500px;
-  border-radius:2em;
-  font-family: "ＭＳ Ｐゴシック", sans-serif;
   font-weight: bold;
+  overflow: hidden;
+  padding: .2em 0;
+  /*top: 80%;*/
+  left: 20%;
+}
 
-} /* Green */
-@media only screen and (max-width: 780px) {
-  .button1 {
-      text-align: center; /* Center align the content */
-      display: flex;
-      justify-content: center;
-      align-items: center;
+.second-container p {
+  position: relative;
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 40%;
+  align-items: center;
+  top: 100px;
+  left: 20%;
+}
+
+.second-container img {
+  max-width: 100%;
+  position: relative;
+  top: center;
+  left: -25%;
+  top: -150px;
+}
+/* Add this media query for smaller screens */
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 1080px) {
+  .second-container {
+    text-align: center; /* Center align the content */
   }
+
+  .second-container h1,
+  .second-container p {
+    width: 80%; /* Adjust the width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+    position: static; /* Reset position */
+  }
+
+  .second-container img {
+    max-width: 100%;
+    margin-top: 1.8em; /* Add margin to separate image from text */
+    position: static; /* Reset position */
+  }
+}
+/* End Second container */
+
+/* Start third container */
+.third-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+
+}
+
+.third-container h1 {
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  padding: .2em 0;
+  top: 50px;
+  left: 0%;
+}
+
+.third-container p {
+  position: relative;
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 40%;
+  align-items: center;
+  top: 100px;
+  left: 20%;
+}
+
+.third-container img {
+  max-width: 100%;
+  position: relative;
+  top: center;
+  left: -30%;
+  top: -160px;
+}
+/* Add this media query for smaller screens */
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 1080px) {
+  .thrid-container {
+    text-align: center; /* Center align the content */
+  }
+
+  .third-container h1,
+  .third-container p {
+    width: 80%; /* Adjust the width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+    position: static; /* Reset position */
+  }
+
+  .thrid-container img {
+    max-width: 100%;
+    margin-top: 1.8em; /* Add margin to separate image from text */
+    position: static; /* Reset position */
+  }
+}
+
+/* End third container */
+
+
+/* Fourth container*/
+.fourth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+
+}
+
+.fourth-container h2 {
+  position: relative;
+  font-weight: bold;
+  margin-top: 20px;
+  overflow: hidden;
+  padding: .2em 0;
+  top: -10px;
+  right: 0%;
+}
+.fourth-container ul
+{
+  list-style-type: circle;
+  word-wrap: break-word;
+  position: relative;
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  overflow: hidden;
+  top: -10px;
+  right: -5%;
+}
+.fourth-container p
+{
+  width: 500px;
+}
+.fourth-container ul li
+{
+  list-style-type: circle;
+  position: relative;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 90%;
+}
+/* Add this media query for smaller screens */
+
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .fifth-container {
+    text-align: center; /* Center align the content */
+  }
+  .fourth-container h2,
+  .fifth-container h2 {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+  .fourth-container ul,
+  .fifth-container ul {
+    margin-top: 10px; /* Adjust as needed */
+  }
+}
+
+/* End fourth container */
+
+
+/* fifth container*/
+.fifth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: white;
+
+}
+
+.fifth-container h2 {
+  position: relative;
+  font-weight: bold;
+  overflow: hidden;
+  padding: .2em 0;
+  top: 50px;
+  right: 0%;
+}
+.fifth-container ul
+{
+  list-style-type: circle;
+  word-wrap: break-word;
+  position: relative;
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  overflow: hidden;
+  top: 20px;
+  right: -2%;
+}
+.fifth-container ul li
+{
+  list-style-type: circle;
+  position: relative;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  overflow: hidden;
+  width: 90%;
+}
+/* Add this media query for smaller screens */
+
+/* Add this media query for smaller screens */
+@media only screen and (max-width: 600px) {
+  .fifth-container {
+    text-align: center; /* Center align the content */
+  }
+  .fourth-container h2,
+  .fifth-container h2 {
+    margin-bottom: 10px; /* Adjust as needed */
+  }
+
+  .fourth-container ul,
+  .fifth-container ul {
+    margin-top: 10px; /* Adjust as needed */
+  }
+}
+
+/* Style for the dropdown button */
+
+.dropdown {
+  margin-top: 20px; /* Adjust this value to move the entire dropdown down */
+}
+.dropdown button {
+  position: relative;
+  top: 30px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+/* Style for the dropdown content (hidden by default) */
+.dropdown-content {
+  display: none;
+}
+
+/* Style for dropdown links */
+.dropdown-content a {
+  background-color: #333333;
+  display: block;
+  padding: 12px 16px;
+  text-decoration: none;
+  color: #333333;
+}
+
+/* Style for dropdown links on hover */
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
+.benefits-list {
+  margin: 0;
+  padding-left: 100px; /* Adjust the indentation as needed */
 }
