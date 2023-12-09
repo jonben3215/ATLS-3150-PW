@@ -323,7 +323,7 @@ li.logo a:hover {
   .dropdown-content
   {
     margin-top: 10px; /* Move the entire dropdown down */
-    margin-left: -50px; /* Reset the left margin */
+    margin-left: -70px; /* Reset the left margin */
     text-align: center; /* Center align the content */
   }
 }
