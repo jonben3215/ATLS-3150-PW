@@ -85,6 +85,7 @@ body {
   /* Update image and paragraph for responsiveness */
   section img {
     max-width: 100%;
+    padding-top: 10px;
     height: auto;
     display: block;
     margin: 0 auto; /* Center horizontally */
@@ -175,13 +176,17 @@ footer { grid-area: footy; background: rgb(171, 171, 171); }
 
 
 aside#aside1 {
+    position: relative;
+    overflow: hidden;
     text-align: center;
+    padding: 20px; /* Add padding for better readability */
   }
   
   aside#aside1 h2 {
     margin-top: 10px;
     text-align: center;
-    font-size: 16px; /* Adjust the font size as needed */
+    font-weight: bolder;
+    font-size: 20px; /* Adjust the font size as needed */
   }
   
   aside#aside1 img {
@@ -189,6 +194,11 @@ aside#aside1 {
     height: auto;
     display: block;
     margin: 0 auto;
+  }
+  aside#aside1 p {
+    margin: 0 auto; /* Center the paragraph horizontally */
+    text-align: left;
+    width: 70%;
   }
 
 @media screen and (max-width: 640px) {
@@ -205,8 +215,7 @@ aside#aside1 {
 }
 
 @media screen and (max-width: 768px) {
-    aside#aside1 {
-    }
+    aside#aside1
     
     aside#h2 {
       margin-top: 8px; /* Adjusted margin top for smaller screens */
@@ -224,7 +233,6 @@ aside#aside1 {
     text-align: center;
     font-size: 16px; /* Adjust the font size as needed */
   }
-  
   aside#aside2 img {
     max-width: 100%;
     height: auto;
