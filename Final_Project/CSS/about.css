@@ -31,15 +31,57 @@ body {
     width: 1px;
   
   }
+  .sr-only {
+    border: 0;
+    clip: rect(0, 0, 0, 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  
+  }
+  
+  .skip-link {
+    background: black;
+    color: #fff;
+    font-weight: 700;
+    padding: 4px;
+    position: absolute;
+    transform: translateY(-300%);
+  }
+  
+  .skip-link:focus {
+    transform: translateY(0%);
+  }
+  
+  .skip-link {
+    /* Same as  before */
+    transition: transform 0.3s;
+  }
   .hidden-title {
     display: none;
   }
-section {
+  section {
     position: relative;
     overflow: hidden;
-    text-align: center; /* Center-align content */
+    text-align: center;
+    color: white; /* Set text color to white */
+    padding: 20px; /* Add padding for better readability */
   }
-  
+  section h1 {
+    font-weight: bold;
+    padding: .2em 0;
+    text-align: center;
+    color: white; /* Set h1 text color to white */
+  }
+  section p {
+    width: 70%; /* Set the width as a percentage for responsiveness */
+    margin: 0 auto; /* Center the paragraph horizontally */
+    text-align: left;
+  }
   /* Update image and paragraph for responsiveness */
   section img {
     max-width: 100%;
@@ -47,17 +89,10 @@ section {
     display: block;
     margin: 0 auto; /* Center horizontally */
   }
-  
-  section h2 {
-    color:white;
-    margin-top: 10px;
-    text-align: center;
-    font-size: 16px; /* Adjust the font size as needed */
-  }
-  
+
 h2
 {
-    font-weight: bold;
+  font-weight: bold;
   padding: .2em 0;
   text-align: center;
 }
@@ -68,12 +103,12 @@ h3 {
 }
 
 ul {  
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-weight: bold;
-    
+  list-style-type: none;
+  margin: 5px 0 5px 0; /* Adjusted margin-top to move the ul down by 5px */
+  padding: 0;
+  overflow: hidden;
+  font-weight: bold;
+  position: relative;
   }
   
   li {
@@ -89,10 +124,15 @@ ul {
     text-decoration: none;
   }
   
-.logo {
+  .logo {
+    position: relative;
+    bottom: -10px; 
+    padding-right: 10px;
+    padding-left: 5px;
     font-weight: bold;
     text-decoration: none;
-}
+    color: green;
+  }
 li.logo a
 {
     color: green; /* Set the text color to green */
@@ -357,5 +397,46 @@ aside#aside1 {
       border-radius: 100px;
     }
   }
-  
 
+  footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f0f0f0;
+    padding: 10px 0;
+    color: black;
+    text-align: center;
+    z-index: 9999;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 600px) {
+    /* Adjust container style to use flexbox and position at the bottom */
+    .container {
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      min-height: calc(100vh - 60px);
+      padding-bottom: 60px; /* Adjust the padding-bottom to accommodate the footer */
+    }
+  
+    /* Rest of your existing media query styles... */
+  
+    /* Styles for the footer on smaller screens */
+    footer {
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+      background-color: #f0f0f0;
+      padding: 10px 0;
+      color: black;
+      text-align: center;
+      z-index: 9999;
+    }
+  
+    /* Adjust the navigation margin to create space above the footer */
+    nav {
+      margin-bottom: 40px; /* Same value as padding-bottom of .container */
+    }
+  }
+  

@@ -32,11 +32,11 @@ body {
   font-weight: 700;
   padding: 4px;
   position: absolute;
-  transform: translateY(-200%);
+  transform: translateY(-300%);
 }
 
 .skip-link:focus {
-  transform: translateY(-100%);
+  transform: translateY(0%);
 }
 
 .skip-link {
@@ -383,4 +383,12 @@ li.logo a:hover {
     background-color: green;
     border-radius: 100px;
   }
+}
+footer {
+  position: relative; /* Change position to relative */
+  width: 100%;
+  background-color: #f0f0f0;
+  padding: 10px 0;
+  color: black;
+  text-align: center;
 }
