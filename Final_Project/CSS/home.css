@@ -109,12 +109,13 @@ ul {
   }
   
 .logo {
-    font-weight: bold;
-    text-decoration: none;
-}
-li.logo a
-{
-    color: green; /* Set the text color to green */
+  position: relative;
+  bottom: -10px; 
+  padding-right: 10px;
+  padding-left: 5px;
+  font-weight: bold;
+  text-decoration: none;
+  color: green;
 }
 
 li a:hover:not(.active) {
