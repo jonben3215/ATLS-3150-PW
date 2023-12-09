@@ -320,3 +320,65 @@ li.logo a:hover {
     margin-bottom: 20px; /* Add margin at the bottom to separate from paragraphs */
   }
 }
+@media only screen and (max-width: 600px) {
+  /* Adjust container style to use flexbox and position at the bottom */
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-height: 100vh; /* Ensure the container takes full viewport height */
+    margin-bottom: 60px; /* Add some margin to push contents up */
+  }
+
+  /* Position the nav at the bottom */
+  nav {
+    margin-top: auto;
+    width: 100%;
+    background-color: #f0f0f0; /* Change this to your desired background color */
+    padding: 10px 0;
+    position: fixed; /* Change position to fixed */
+    bottom: 0;
+    left: 0;
+  }
+
+  /* Adjust logo and list styles */
+  .logo {
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+    color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  nav ul {
+    display: flex;
+    justify-content: center; /* Align items to the center */
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav li {
+    margin: 0;
+  }
+
+  nav li a {
+    text-decoration: none;
+    color: black;
+    padding: 5px;
+  }
+
+  /* Adjust padding and appearance for each list item */
+  nav li a:hover:not(.active) {
+    background-color: gray;
+    border-radius: 100px;
+  }
+
+  nav li a.active {
+    color: white;
+    background-color: green;
+    border-radius: 100px;
+  }
+}
