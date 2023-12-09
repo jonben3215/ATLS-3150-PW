@@ -171,7 +171,7 @@ li.logo a:hover {
   position: relative;
   top: center;
   left: -25%;
-  top: -200px;
+  top: -150px;
 }
 /* Add this media query for smaller screens */
 /* Add this media query for smaller screens */
@@ -232,23 +232,18 @@ li.logo a:hover {
   line-height: 1.8em;
   word-wrap: break-word;
   text-align: left;
-  width: 50%;
   width: 600px;
 }
-
-
 .fourth-container ul li
 {
-  padding: 0 !important;
   list-style-type: circle;
   position: relative;
   line-height: 1.8em;
   text-align: left;
   word-wrap: break-word;
   overflow: hidden;
-  left:500px;
-  top: -5px;
-  width: 90%;
+  left: 230px;
+  width: 80%;
 }
 /* Add this media query for smaller screens */
 
@@ -275,11 +270,9 @@ li.logo a:hover {
 /* End fourth container */
 
 .dropdown {
-  position: relative;
   margin-top: -20px; /* Adjust this value to move the entire dropdown down */
-  margin-left: -490px;
+  margin-left: -470px;
 }
-
 .dropdown button {
   position: relative;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -287,6 +280,7 @@ li.logo a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
+
 }
 
 /* Style for the dropdown content (hidden by default) */
@@ -298,6 +292,7 @@ li.logo a:hover {
 .dropdown-content a {
   background-color: #333333;
   display: block;
+  float: left;
   padding: 12px 16px;
   text-decoration: none;
   color: #333333;
@@ -307,17 +302,26 @@ li.logo a:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-
+.benefits-list {
+  margin: 0;
+  padding-left: 100px; /* Adjust the indentation as needed */
+}
 /* Adjust the button's position for smaller screens */
 @media only screen and (max-width: 1080px) {
   .dropdown {
     margin-top: 10px; /* Move the entire dropdown down */
-    margin-left: 0; /* Reset the left margin */
+    margin-left: -40px; /* Reset the left margin */
     text-align: center; /* Center align the content */
   }
 
   .dropdown button {
     margin-top: 20px; /* Adjust the top margin of the button */
     margin-bottom: 20px; /* Add margin at the bottom to separate from paragraphs */
+  }
+  .dropdown-content
+  {
+    margin-top: 10px; /* Move the entire dropdown down */
+    margin-left: -50px; /* Reset the left margin */
+    text-align: center; /* Center align the content */
   }
 }
