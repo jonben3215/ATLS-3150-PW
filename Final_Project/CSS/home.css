@@ -74,6 +74,7 @@ h3 {
   margin: 1.8em 0;
   line-height: 1.8em;
   word-wrap: break-word;
+  text-align: left;
   width: 50%;
 }
 
@@ -148,6 +149,7 @@ li.logo a:hover {
   overflow: hidden;
   padding: .2em 0;
   top: 10px;
+  padding-bottom: 1em;
   left: 0;
 }
 
@@ -156,9 +158,10 @@ li.logo a:hover {
   margin: 1.8em 0;
   line-height: 1.8em;
   word-wrap: break-word;
-  overflow: hidden;
+  text-align: left;
   width: 40%;
   align-items: center;
+  text-align: left;
   top: 100px;
   left: 20%;
 }
@@ -168,7 +171,7 @@ li.logo a:hover {
   position: relative;
   top: center;
   left: -25%;
-  top: -250px;
+  top: -200px;
 }
 /* Add this media query for smaller screens */
 /* Add this media query for smaller screens */
@@ -191,69 +194,6 @@ li.logo a:hover {
   }
 }
 /* End Second container */
-
-/* Start third container */
-.third-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
-
-}
-
-.third-container h1 {
-  position: relative;
-  font-weight: bold;
-  overflow: hidden;
-  padding: .2em 0;
-  top: 50px;
-  left: 0%;
-}
-
-.third-container p {
-  position: relative;
-  margin: 1.8em 0;
-  line-height: 1.8em;
-  word-wrap: break-word;
-  overflow: hidden;
-  width: 40%;
-  align-items: center;
-  top: 100px;
-  left: 20%;
-}
-
-.third-container img {
-  max-width: 100%;
-  position: relative;
-  top: center;
-  left: -30%;
-  top: -160px;
-}
-/* Add this media query for smaller screens */
-/* Add this media query for smaller screens */
-@media only screen and (max-width: 1080px) {
-  .thrid-container {
-    text-align: center; /* Center align the content */
-  }
-
-  .third-container h1,
-  .third-container p {
-    width: 80%; /* Adjust the width of the text */
-    margin: 0 auto; /* Center the text horizontally */
-    position: static; /* Reset position */
-  }
-
-  .thrid-container img {
-    max-width: 100%;
-    margin-top: 1.8em; /* Add margin to separate image from text */
-    position: static; /* Reset position */
-  }
-}
-
-/* End third container */
-
 
 /* Fourth container*/
 .fourth-container {
@@ -288,100 +228,58 @@ li.logo a:hover {
 }
 .fourth-container p
 {
-  width: 500px;
+  margin: 1.8em 0;
+  line-height: 1.8em;
+  word-wrap: break-word;
+  text-align: left;
+  width: 50%;
+  width: 600px;
 }
+
+
 .fourth-container ul li
 {
+  padding: 0 !important;
   list-style-type: circle;
   position: relative;
   line-height: 1.8em;
+  text-align: left;
   word-wrap: break-word;
   overflow: hidden;
+  left:500px;
+  top: -5px;
   width: 90%;
 }
 /* Add this media query for smaller screens */
 
 /* Add this media query for smaller screens */
-@media only screen and (max-width: 600px) {
-  .fifth-container {
+@media only screen and (max-width: 1080px) {
+  .fourth-container {
     text-align: center; /* Center align the content */
   }
-  .fourth-container h2,
-  .fifth-container h2 {
-    margin-bottom: 10px; /* Adjust as needed */
+
+  .fourth-container h1,
+  .fourth-container p {
+    width: 80%; /* Adjust the width of the text */
+    margin: 0 auto; /* Center the text horizontally */
+    position: static; /* Reset position */
   }
 
-  .fourth-container ul,
-  .fifth-container ul {
-    margin-top: 10px; /* Adjust as needed */
+  .fourth-container img {
+    max-width: 100%;
+    margin-top: 1.8em; /* Add margin to separate image from text */
+    position: static; /* Reset position */
   }
 }
 
 /* End fourth container */
 
-
-/* fifth container*/
-.fifth-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  background-color: white;
-
-}
-
-.fifth-container h2 {
-  position: relative;
-  font-weight: bold;
-  overflow: hidden;
-  padding: .2em 0;
-  top: 50px;
-  right: 0%;
-}
-.fifth-container ul
-{
-  list-style-type: circle;
-  word-wrap: break-word;
-  position: relative;
-  margin: 1.8em 0;
-  line-height: 1.8em;
-  overflow: hidden;
-  top: 20px;
-  right: -2%;
-}
-.fifth-container ul li
-{
-  list-style-type: circle;
-  position: relative;
-  line-height: 1.8em;
-  word-wrap: break-word;
-  overflow: hidden;
-  width: 90%;
-}
-/* Add this media query for smaller screens */
-
-/* Add this media query for smaller screens */
-@media only screen and (max-width: 600px) {
-  .fifth-container {
-    text-align: center; /* Center align the content */
-  }
-  .fourth-container h2,
-  .fifth-container h2 {
-    margin-bottom: 10px; /* Adjust as needed */
-  }
-
-  .fourth-container ul,
-  .fifth-container ul {
-    margin-top: 10px; /* Adjust as needed */
-  }
-}
-
-/* Style for the dropdown button */
-
 .dropdown {
-  margin-top: 20px; /* Adjust this value to move the entire dropdown down */
+  position: relative;
+  margin-top: -20px; /* Adjust this value to move the entire dropdown down */
+  margin-left: -490px;
 }
+
 .dropdown button {
   position: relative;
   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -389,7 +287,6 @@ li.logo a:hover {
   border: none;
   cursor: pointer;
   padding: 0;
-
 }
 
 /* Style for the dropdown content (hidden by default) */
@@ -410,7 +307,17 @@ li.logo a:hover {
 .dropdown-content a:hover {
   background-color: #f1f1f1;
 }
-.benefits-list {
-  margin: 0;
-  padding-left: 100px; /* Adjust the indentation as needed */
+
+/* Adjust the button's position for smaller screens */
+@media only screen and (max-width: 1080px) {
+  .dropdown {
+    margin-top: 10px; /* Move the entire dropdown down */
+    margin-left: 0; /* Reset the left margin */
+    text-align: center; /* Center align the content */
+  }
+
+  .dropdown button {
+    margin-top: 20px; /* Adjust the top margin of the button */
+    margin-bottom: 20px; /* Add margin at the bottom to separate from paragraphs */
+  }
 }
