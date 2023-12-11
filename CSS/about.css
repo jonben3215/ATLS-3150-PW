@@ -187,5 +187,5 @@ li::before {
   font-weight: 700;
   padding: 4px;
   position: absolute;
-  transform: translateY(-200%);
+  transform: translateY(200%);
 }
