@@ -140,7 +140,6 @@ header {
 }
 
 .section:nth-child(10) {
-  background-color: #pink;
   color: #fff;
   top: 900vh;
   z-index: 10;
